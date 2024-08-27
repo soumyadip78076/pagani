@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Body {
+    position: relative;
+    background-color: black;
+}
+
+.Header {
+    padding-top: 20px;
+}
+
+.Header p {
+    margin-left: 680px;
+    font-size: 20px;
+    color: #f2f5ee;
+    text-align: center;
+    font-family: monospace;
+    width: 145px;   
+    height: 27px;  
+    border-radius: 50%;
+    border: 2px solid #f3f6f1;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+.Image_Contaoiner img {
+    width: 100%;
+    height: 800px;
+    opacity: 0; 
+    animation: fadeIn 3s ease-out forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Text_over_Image p {
+    position: absolute;
+    bottom: 600px; 
+    left: 20%;
+    color:  #e7d9d9;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0; 
+    animation: fadeInText 2s 3s ease-out forwards; 
+}
+
+.Text_over_Image h1 {
+    position: absolute;
+    bottom: 670px; 
+    left: 630px;
+    color: #ebe5e5;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0; 
+    animation: fadeInText 4s 5s ease-out forwards; 
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Sidebar starts off-screen */
+    height: 100%;
+    width: 250px;
+    background-color:black;
+    color: rgb(15, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease; /* Fixed: transition property should be for 'right' */
+    z-index: 1000;
+}
+
+.Sidebar.visible {
+    right: 0; /* Sidebar slides into view */
+}
+
+.Sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.Sidebar ul li a {
+    color: rgba(255, 255, 255, 0.616);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Sidebar ul li a:hover {
+    color: #f3f6f1; 
+    border: 2px solid;
+    padding-left: 93px;
+    padding-right: 93px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #ebe5e5;
+    border-right-color: #e7d9d9;
+
+}
+.ToggleButton {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ToggleButton img.ToggleIcon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
