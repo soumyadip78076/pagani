@@ -64,7 +64,7 @@ function MainPage() {
         </div>
 
         <div className='Header'>
-          <p>PAGANI</p>
+          <p>XENNA</p>
         </div>
 
         <div className='Image_Contaoiner'>
