@@ -1,0 +1,52 @@
+.history-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.scroll-indicators {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    pointer-events: none; /* Make the scroll indicators non-functional */
+}
+
+.mouse {
+    width: 35px;
+    left: 50%;
+    height: 70px;
+    border: 3px solid #bdb3b3;
+    border-radius: 60px;
+    position: relative;
+}
+.mouse p{
+    color: #adb3a3b6;
+    margin-top: 80px;
+    width:110px;
+    margin-left: -36px;
+    font-size:small;
+    font-weight: bold;
+}
+
+.mouse::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e0cfcf;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+

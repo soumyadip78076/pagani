@@ -1,0 +1,44 @@
+.first-component {
+    position: relative;
+    background-color: rgb(30, 28, 28);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.first-component img {
+    width: 100%; 
+    height: auto; 
+    animation: fadeIn 3s ease-out forwards; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.first-component p {
+    position: absolute;
+    color: rgb(161, 170, 177);
+    font-weight: bold;
+    font-size: 3.2rem; /* Adjust font size as needed */
+    top: 15%; /* Position it in the center vertically */
+    left: 76%; /* Position it in the center horizontally */
+    animation: fadeInText  2s ease-out forwards;
+}
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

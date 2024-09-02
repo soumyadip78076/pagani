@@ -1,0 +1,80 @@
+.Sidebar {
+    position: fixed;
+    top: 0;
+    padding-top: 60px;
+    right: -250px; /* Sidebar starts off-screen */
+    height: 100%;
+    width: 250px;
+    background-color:black;
+    color: rgb(15, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    transition: right 0.3s ease; /* Fixed: transition property should be for 'right' */
+    z-index: 1000;
+}
+.Sidebar img{
+    margin-top: 50px;
+    width: 100px;
+    background-color: #e7d9d9;
+    border-radius: 50%;
+}
+
+.Sidebar.visible {
+    right: 0;
+}
+
+.Sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items:center;
+    
+}
+.Sidebar ul li {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.Sidebar ul li a {
+    color: rgba(255, 255, 255, 0.616);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Sidebar ul li a:hover {
+    color: #f3f6f1;
+}
+.ToggleButton {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ToggleButton img.ToggleIcon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.login {
+    margin-top:60px ;
+  }
+  
+  .login p {
+    font-size: 20px;
+    color: #eee9e9;
+    font-weight: 700;
+  }
