@@ -1,0 +1,53 @@
+.Main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Input_area{
+    margin-top:12px;
+    background-color: aliceblue;
+    height: 510px;
+}
+.Button_area{
+    display: flex;
+    background:transparent;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+.Button_area p{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    color: rgba(104, 85, 224, 1);;
+    background-color: white;
+    padding: 6px 42px 6px 42px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+}
+.Button_area p:hover{
+    background-color: rgba(104, 85, 224, 1);
+    color: aliceblue;
+}
+.Button_area p1 {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(104, 85, 224, 1);
+    padding: 6px 42px 6px 42px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+}
+
+.Button_area p1:hover {
+    background-color: white;
+    color: rgba(104, 85, 224, 1);
+}
+
+
+.Button_area a{
+    text-decoration: none;
+}

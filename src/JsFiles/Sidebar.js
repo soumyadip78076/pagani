@@ -55,16 +55,14 @@ function Sidebar() {
           <li><NavLink to="/contact" onClick={handleMenuClick}>CONTACT</NavLink></li>
           <li><NavLink to="/carrear" onClick={handleMenuClick}>JOB OPPORTUNITIES</NavLink></li>
           <li><NavLink to="/store" onClick={handleMenuClick}>PAGANI STORE</NavLink></li>
-
         </ul>
         <img 
           src="https://cdn.worldvectorlogo.com/logos/pagani-flat-emblem-.svg" 
           alt="Pagani Logo" 
         />
         <div className='login'>
-          <NavLink to="/login" onClick={handleMenuClick}><p>Login/Register</p> </NavLink>
+          <NavLink to="/login"><p>Login/Register</p></NavLink>
         </div>
-          
       </div>
     </div>
   );

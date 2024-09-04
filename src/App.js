@@ -1,15 +1,15 @@
 import React from 'react';
 import MainPage from './JsFiles/MainPage';
 import { Routes, Route } from 'react-router-dom'; 
-import History from './JsFiles/History';
 import Sidebar from './JsFiles/Sidebar';
+import History from './JsFiles/History';
 import HyperCars from './JsFiles/HyperCars';
 import Dealer from './JsFiles/Dealer';
 import Carrear from './JsFiles/Carrear';
 import Contact from './JsFiles/Contact';
 import Store from './JsFiles/Store';
 import Visit from './JsFiles/Visit';
-
+import Login from './JsFiles/Login';
 function App() {
   return (
     <>
@@ -26,9 +26,7 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/carrear" element={<Carrear/>}/>
       <Route path="/store" element={<Store/>}/>
-
-
-
+      <Route path='/login' element={<Login/>}/>
     </Routes>
     
     </>

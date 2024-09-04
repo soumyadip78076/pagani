@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../CssFiles/MainPageCss.css';
 import carImage from '../images/car.png';
 import Loader from './Loader'; // Import the Loader component
-
 function MainPage() {
   const [loading, setLoading] = useState(true); // Add state to manage loading
 
@@ -19,7 +18,7 @@ function MainPage() {
         <div className='Header'>
           <p>PAGANI</p>
         </div>
-
+        
         <div className='Image_Container'>
           <img src={carImage} alt="Car" />
           <div className='Text_over_Image'>
