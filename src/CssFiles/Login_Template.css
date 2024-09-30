@@ -1,17 +1,14 @@
 .Main{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    padding: 30px;
 }
 .Input_area{
-    margin-top:12px;
     background-color: aliceblue;
-    height: 510px;
 }
 .Button_area{
     display: flex;
     background:transparent;
-    height: 60px;
     justify-content: center;
     align-items: center;
     gap: 80px;

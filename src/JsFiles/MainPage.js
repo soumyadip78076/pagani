@@ -26,8 +26,9 @@ function MainPage() {
             <p>ACT THREE, SCENE TWO: PAGANI UTOPIA ROADSTER.</p>
           </div>
         </div>
-      </div>
+      </div> 
     </>
+    
   );
 }
 
